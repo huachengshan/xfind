@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>聊天记录</title>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+      <script type="text/javascript">
+        var tt = Math.random();
+        document.write("<link href=\"css/bootstrap/bootstrap.min.css?tt="+tt+"\" rel=\"stylesheet\">");
+        document.write("<link href=\"css/common.css?tt="+tt+"\" rel=\"stylesheet\">");
+        document.write("<link href=\"css/ucenter/message.css?tt="+tt+"\" rel=\"stylesheet\">");
+        document.write("<link href=\"css/ucenter/systemMessage.css?tt="+tt+"\" rel=\"stylesheet\">");
+        document.write("<link href=\"css/dropload.css?tt="+tt+"\" rel=\"stylesheet\">");
+        document.write("<script type=\"text/javascript\" src=\"js/jquery.min.js?tt="+tt+"\"><\/script>");
+        document.write("<script type=\"text/javascript\" src=\"js/circle-progress.js?tt="+tt+"\"><\/script>");
+        document.write("<script type=\"text/javascript\" src=\"js/dropload.min.js?tt="+tt+"\"><\/script>");
+        document.write("<script type=\"text/javascript\" src=\"js/pagination.js?tt="+tt+"\"><\/script>");
+        document.write("<script type=\"text/javascript\" src=\"js/common.js?tt="+tt+"\"><\/script>");
+        document.write("<script type=\"text/javascript\" src=\"js/ucenter/message.js?tt="+tt+"\"><\/script>");
+      </script>
+   </head>
+   <body>
+    <div class="tab">
+      <ul>
+        <li><div id="chat" class="tab-item active">聊天记录</div></li>
+        <li><div id="message" class="tab-item">系统消息<span class="num">0</span></div></li>
+        <li><div id="see" class="tab-item">谁看过我<!--span class="num">0</span--></div></li>
+      </ul>
+    </div>
+    <div style="height: 1.2rem;"></div>
+    <div id="content">
+      <div id="chat-list">
+        
+      </div>
+      <div id="message-list" class="container" style="display: none;">
+        
+      </div>
+      <div id="see-list" style="display: none;">
+        
+      </div>
+    </div>
+   	<div style="height: 2rem;"></div>
+    <div id="footer" index="2"></div>
+    
+   </body>
+</html>

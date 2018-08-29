@@ -1,0 +1,163 @@
+body{
+	background-color: rgb(238,238,238);
+}
+
+header{
+	background-color: rgb(30,127,245);
+	padding-bottom: .5rem;
+}
+
+header .avatar {
+	text-align: center;
+	padding-top: .1rem;
+	position: relative;
+}
+
+header .avatar img{
+	height: 2rem;
+	width: 2rem;
+	border-radius: 1rem;
+	border: 1px solid #fff;
+}
+
+header .avatar .username{
+	font-size: .45rem;
+	color: #fff;
+	margin-top: .2rem;
+	padding: 0 0.5%;
+}
+
+header .avatar .upload-photo{
+	display: none;
+	font-size: .45rem;
+	color: #fff;
+	margin-top: .2rem;
+	padding: 0 0.5%;
+}
+
+header .avatar #fileupload{
+	display: none;
+}
+
+header .jianli-set{
+	height: .8rem;
+	line-height:.8rem;
+	padding-top: .2rem;
+	display: none;
+}
+
+header .jianli-set ul{
+	margin-bottom:0;
+}
+
+header .jianli-set ul li{
+	float: left;
+	list-style: none;
+	width: 33%;
+	color: #fff;
+	text-align: center;
+}
+
+header .jianli-set ul li .my-btn{
+	font-size: .4rem;
+	border:1px solid #fff;
+	padding: .1rem .3rem;
+	border-radius: .4rem;
+}
+
+.jianli-container {
+	background-color: rgb(238,238,238);
+}
+
+.jianli-rate{
+	padding: .2rem .5rem;
+	color: rgb(153,153,153);
+}
+
+.setting{
+	height: 1.2rem;
+	line-height: 1.2rem;
+	border-bottom: 1px solid #E8E9EB;
+	margin:0 .3rem;
+	position: relative;
+	font-size: .45rem;
+	background-color: #fff;
+	border-radius: 5px;
+	margin-bottom:.35rem;
+}
+
+.setting .model{
+	padding-left: .2rem;
+}
+
+.input-label{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+    padding-left: 2.5rem;
+}
+
+.input-label input{
+	width: 100%;
+	border: 0;
+	font-size: .4rem;
+    padding-right: .5rem;
+    text-align: right;
+    height: 1rem;
+}
+
+.arrow {
+	position: absolute;
+	top: 50%;
+	right: .3rem;
+	transform: translate(0, -50%);
+}
+
+
+.arrow .text{
+	vertical-align: middle;
+	display: inline-block;
+	color: rgb(153,153,153);
+	font-size: .4rem;
+}
+
+.arrow .active{
+	color: rgb(78,158,255);
+}
+
+.arrow img{
+	vertical-align: middle;
+	width: .2rem;
+}
+
+.footer{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    background-color: #fff;
+    padding: 0 .83rem;
+}
+
+.footer .btn {
+	background-color: rgb(30,127,245);
+	border-color: rgb(30,127,245);
+	font-size: .45rem;
+	height: 1.17rem;
+	padding: 0;
+	margin:.4rem 0;
+}
+
+.name-input{
+	width: 80%;
+    margin-left: 10%;
+    margin-top: .6rem;
+    padding: .2rem .1rem;
+    border: 0;
+    border-radius: 5px;
+}
+
+
+
+
+

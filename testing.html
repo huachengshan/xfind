@@ -1,0 +1,50 @@
+
+<html>
+<head>
+    <title>职业测评</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="css/common_mobile.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <!-- js -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/common2.js"></script>
+    <script src="js/ucenter/testing.js"></script>
+</head>
+
+<body>
+    <input type="hidden" name="select_value" id="select_value" />
+    <div class='page_body testing_page'>
+        <div class='testing_progress_box'>
+            <div class='testing_progress'>
+                <div class='progress'>
+                    <div class='progress_inner' style="width: 0%;">
+                        <div class='progress_arrow'>
+                            <img src="images/15.png">
+                            <p class='per_text'>0%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="title1" class='test_question_box'>
+        </div>
+
+        <div class='test_answer_box'>
+            <div id="title2" class="answer_item" style="font-size: 16px;">
+            </div>
+            <div id="option_content">
+            </div>
+        </div>
+
+        <div class='test_submit_box align_center'>
+            <button id="nextBtn" class='test_btn_submit' onclick="preQuestion();">上一题</button>
+        </div>
+    </div>
+</body>
+
+</html>

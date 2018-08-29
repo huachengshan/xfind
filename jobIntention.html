@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>求职意向</title>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+      <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+      <link href="css/common.css" rel="stylesheet">
+      <link href="css/ucenter/jobIntention.css" rel="stylesheet">
+      <link href="css/ucenter/selfEvaluation.css" rel="stylesheet">
+      <link href="css/ucenter/nowCity.css" rel="stylesheet">
+      <link href="css/ucenter/jobType.css" rel="stylesheet">
+      <script type="text/javascript" src="js/jquery.min.js"></script>
+      <script type="text/javascript" src="test.js"></script>
+      <script type="text/javascript" src="js/common.js"></script>
+      <script type="text/javascript" src="js/ucenter/jobIntention.js"></script>
+      <script type="text/javascript" src="js/ucenter/selfEvaluation.js"></script>
+   </head>
+   <body>
+    <div id="mainPage">
+      <div class="setting">
+        <div class="model">
+          期望薪资
+        </div>
+        <div class="arrow">
+          <div class="multi-select">
+            <select id="hopeBonus">
+            </select>
+            <div class="arrow1"></div>
+           </div>
+        </div>
+      </div>
+      <div class="setting" id="cus">
+        <div class="model">
+          自定义
+        </div>
+        <div class="input-label cus">
+          <input type="text" name="salary_min" id="salary_min" placeholder="薪资">&nbsp;k&nbsp;-
+          <input type="text" name="salary_max" id="salary_max" placeholder="薪资">&nbsp;k
+        </div>
+      </div>
+      <div class="setting">
+        <div class="model">
+          岗位性质
+        </div>
+        <div class="arrow">
+           <div class="multi-select">
+            <select id="jobProp">
+            </select>
+            <div class="arrow1"></div>
+           </div>
+        </div>
+      </div>
+      <div class="setting" id="nowCity-btn">
+        <div class="model">
+          工作地点
+        </div>
+        <div class="arrow">
+          <div class="text" id="countyArea_name">请选择</div>
+          <input type="hidden" name="" id="countyArea_code">
+          <input type="hidden" name="" id="countyProvince_code">
+          <input type="hidden" name="" id="countyProvince_name">
+          <input type="hidden" name="" id="countyCity_code">
+          <input type="hidden" name="" id="countyCity_name">
+          <img src="images/right-arrow.png">
+        </div>
+      </div>
+      <div class="setting" id="position-btn">
+        <div class="model">
+          岗位类型
+        </div>
+        <div class="arrow">
+          <div class="text" id="position_name">请选择</div>
+          <input type="hidden" name="" id="position_code">
+          <img src="images/right-arrow.png">
+        </div>
+      </div>
+      <div class="setting" id="industry-btn">
+        <div class="model">
+          行业
+        </div>
+        <div class="arrow">
+          <div class="text" id="industry_name">请选择</div>
+          <input type="hidden" name="" id="industry_code">
+          <img src="images/right-arrow.png">
+        </div>
+      </div>
+     	<div class="setting">
+        <div class="model">
+          到岗时间
+        </div>
+        <div class="arrow">
+  		    <div class="multi-select">
+            <select id="jobDate">
+              </select>
+              <div class="arrow1"></div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="setting">
+        <div class="model">
+          个人标签
+        </div>
+        <div class="input-label">
+            <input type="text" name="label" id="label" placeholder="可输入多个，以逗号分隔">
+        </div>
+      </div>
+      <div class="setting" id="selfEvaluation">
+        <div class="model">
+          自我评价
+        </div>
+        <div class="arrow">
+          <div class="text">已填写<span id="inputed">0</span>字</div>
+          <img src="images/right-arrow.png">
+        </div>
+      </div>
+      <div class="footer">
+           <button id="jobIntention-btn" type="button" class="btn btn-primary btn-lg btn-block">保存</button>
+      </div>
+    </div>
+    <div id="page2" style="display: none;height: 100%;">
+      <textarea name="evaluation" class="evaluation" id="evaluation" placeholder="详细描述一下你自己"></textarea>
+      <div class="input-tip">0/500</div>
+      <div class="footer">
+         <button type="button" class="btn btn-primary btn-lg btn-block">确定</button>
+      </div>
+    </div>
+
+    <div id="areaPage" style="display: none;"></div>
+
+    <div id="page3" style="display: none;"></div>
+
+    <div id="page4" style="display: none;height: 100%;"></div>
+
+   </body>
+</html>

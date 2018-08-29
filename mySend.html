@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>我的投递</title>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+      <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+      <link href="css/common.css" rel="stylesheet">
+       <link href="css/dropload.css" rel="stylesheet">
+      <link href="css/ucenter/mySend.css" rel="stylesheet">
+      <script type="text/javascript" src="js/jquery.min.js"></script>
+      <script type="text/javascript" src="js/circle-progress.js"></script>
+      <script type="text/javascript" src="js/common.js"></script>
+      <script type="text/javascript" src="js/dropload.min.js"></script>
+       <script type="text/javascript" src="js/pagination.js"></script>
+      <script type="text/javascript" src="js/ucenter/mySend.js"></script>
+   </head>
+   <body>
+    <div class="tab">
+      <ul>
+        <li><div class="tab-item active" id="all-tab">投递记录</div></li>
+        <li><div class="tab-item" id="readed-tab">被查看<span class="num">0</span></div></li>
+        <li><div class="tab-item" id="interest-tab">感兴趣<span class="num">0</span></div></li>
+        <li><div class="tab-item" id="no-interest-tab">不感兴趣<span class="num">0</span></div></li>
+      </ul>
+    </div>
+    <div style="height: 1.2rem;"></div>
+    <div id="content">
+        <div id="all-list" class="jobList">
+        </div>
+        <div id="readed-list" class="jobList" style="display: none;">
+
+        </div>
+        <div id="interest-list" class="jobList" style="display: none;">
+
+        </div>
+        <div id="no-interest-list" class="jobList" style="display: none;">
+
+        </div>
+    </div>
+   </body>
+</html>

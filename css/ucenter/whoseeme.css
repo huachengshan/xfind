@@ -1,0 +1,17 @@
+.company{
+	font-size: .45rem;
+    font-weight: 400;
+    border-bottom: 1px solid #E8E9EB;
+    height: 1.2rem;
+    line-height: 1.2rem;
+    padding-left: .5rem;
+    display: block;
+}
+
+.mainPage{
+	height: 100%;
+	position: fixed;
+	width: 100%;
+	left: 100%;
+	transition: left 500ms;
+}

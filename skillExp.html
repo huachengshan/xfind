@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>技能培训</title>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+      <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+      <link href="css/common.css" rel="stylesheet">
+      <link href="css/ucenter/skillExp.css" rel="stylesheet">
+      <script type="text/javascript" src="js/jquery.min.js"></script>
+      <script type="text/javascript" src="test.js"></script>
+      <script type="text/javascript" src="js/common.js"></script>
+      <script type="text/javascript" src="js/ucenter/skillExp.js"></script>
+   </head>
+   <body>
+   	<div class="setting">
+      <div class="model">
+        培训课程
+      </div>
+      <div class="input-label">
+		    <input type="text" name="course" id="course" placeholder="请输入培训课程">
+      </div>
+    </div>
+    <div class="setting">
+      <div class="model">
+        培训机构
+      </div>
+      <div class="input-label">
+        <input type="text" name="mechanism" id="mechanism" placeholder="请输入机构名称">
+      </div>
+    </div>
+   	<div class="setting">
+      <div class="model">
+        开始时间
+      </div>
+      <div class="arrow datetime" id="beginTime_arrow">
+          <div class="text" id="beginTime_text">请选择</div>
+          <img src="images/right-arrow.png">
+          <input type="date" name="beginTime" id="beginTime" value="" style="opacity: 0;">
+        </div>
+    </div>
+    <div class="setting">
+      <div class="model">
+        结束时间
+      </div>
+      <div class="arrow datetime" id="endTime_arrow">
+          <div class="text" id="endTime_text">至今</div>
+          <img src="images/right-arrow.png">
+          <input type="date" name="endTime" id="endTime" value="" style="opacity: 0;">
+        </div>
+    </div>
+    <!--div class="setting">
+      <div class="model">
+        相关描述
+      </div>
+      <div class="arrow">
+		 <div class="multi-select">
+			<input type="checkbox" name=""><span>海外经历</span>
+		 </div>
+      </div>
+    </div-->
+    <textarea name="description" class="evaluation" id="description" placeholder="请描述一下您的培训经历（您还可以输入500字）"></textarea>
+    <div class="footer">
+         <button id="addExp-btn" type="button" class="btn btn-primary btn-lg btn-block">保存</button>
+    </div>
+   </body>
+</html>

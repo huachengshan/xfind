@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>途牛科技有限公司</title>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+      <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+      <link href="css/swiper.min.css" rel="stylesheet">
+      <link href="css/common.css" rel="stylesheet">
+      <link href="css/ucenter/chat.css" rel="stylesheet">
+      <script type="text/javascript" src="js/jquery.min.js"></script>
+      <script type="text/javascript" src="js/circle-progress.js"></script>
+      <script type="text/javascript" src="js/swiper.min.js"></script>
+      <script type="text/javascript" src="js/common.js"></script>
+      <script type="text/javascript" src="js/ucenter/chat2.js"></script>
+   </head>
+   <body class="wrapper">
+    <div class="header">
+	   	<div class="myFocus">
+	      <div class="company">
+	        平面设计师
+	      </div>
+	      <div class="category">
+			    4.5-7k/月<span class="tags">南京/本科/11.01</span>
+	      </div>
+	      <div class="address">
+			    南京纵览教育科技有限公司
+	      </div>
+	      <div class="progress-container">
+	        <div class="my-progress lf" progress="0.6"><div class="desc">性格匹配</div></div>
+	        <div class="my-progress rt" progress="0.8"><div class="desc">简历匹配</div></div>
+	      </div>
+	      <div class="jianli">
+			<span class="jianli-status">该简历未投递</span>
+			<span class="jianli-btn">投递简历</span>
+	      </div>
+	    </div> 
+    </div> 
+    ++<audio controls autoplay></audio>++
+    <div style="height: 4rem;"></div>
+
+    <div class="talk-container">
+		<!-- <div class="left-talk">
+			<img class="photo" src="images/img-3.png">
+			<span class="content lf"><div class="lf-tip"></div>您好，请看一下公司网站运营的职位，我觉得你挺适合的，请考虑一下</span>
+		</div>
+		<div class="right-talk">
+			<span class="content rt"><div class="rt-tip"></div>好，马上投简历</span>
+			<img class="photo" src="images/img-3.png">
+		</div> -->
+		<!-- <div class="right-talk">
+			<span class="content rt"></span>
+		</div> -->
+		
+    </div>
+
+	<div style="height: 3rem;"></div>
+    <div class="footer">
+    	<div class="input1">
+			<div id="textarea" class="my-input" name="textarea" contenteditable="true"></div>
+			<div class="send"><div class="line"></div>发送</div>
+		</div>
+		<div class="input2" oncontextmenu="self.event.returnValue=false" onselectstart="return false">按住说话</div>
+		<form id="audioForm" enctype="multipart/form-data">
+			<input type="file" name="file" style="display: none;" id="audio">
+		</form>
+		<ul>
+			<li class="talk" onfocus="this.focused=true;this.select();" onmouseup="if(this.focused){this.focused=false;return false;}"><img src="images/talk.png"></li>
+			<li class="image"><img src="images/image.png"></li>
+			<li class="camera"><img src="images/camera.png"></li>
+			<li class="emotion"><img src="images/face.png"></li>
+			<li class="input"><img src="images/input.png"></li>
+		</ul>
+		<form id="uploadForm" enctype="multipart/form-data">
+			<input type="file" name="file" id="fileupload" accept="image/*" multiple>
+		</form>
+		<form id="cameraForm" enctype="multipart/form-data">
+			<input type="file" name="file" id="camera" accept="image/*" capture="camera">
+		</form>
+		<div class="emoji-container">
+			<div id="emoji" class="swiper-container"></div>
+			<div class="swiper-pagination"></div>
+		</div>
+    </div>
+	<div class="keydown-dailog">
+		<img id="tip-img" src="images/talk-tip.png">
+		<div class="tips">手指上滑，取消发送</div>
+	</div>
+	<div class="zhezhao" style="display: none;"></div>
+	<div class="quik-msg">
+		<img class="close" src="images/close2.png">
+		<div class="title">快捷消息</div>
+		<div class="msg-container">
+			<div class="msg active">
+				<div class="text">您好，我对您发布的职位很感兴趣，希望您能查看我的简历。期待您的回复！</div>
+			</div>
+			<div class="msg">
+				<div class="text">砥砺奋进个地方，东方国际领导风格，地方机构！</div>
+			</div>
+			<div class="msg">
+				<div class="text">您好，我现在在忙，稍后回复您！</div>
+			</div>
+		</div>
+		<div class="send-btn">
+			<span class="my-btn">发送</span>
+		</div>
+	</div>
+	<div class="img-preview">
+		<img id="img-preview" src="images/img-3.png">
+	</div>
+	
+   </body>
+</html>
+<script type="text/javascript" src="js/recorder.js"></script>
+<script type="text/javascript" src="js/emojione.js"></script>
+<script type="text/javascript" src="js/bundle.js"></script>

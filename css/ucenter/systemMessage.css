@@ -1,0 +1,59 @@
+.container{
+	padding: .4rem 1rem;
+}
+.container .message{
+	border: 1px solid #E8E9EB;
+	box-shadow: 0px 0px 1px 1px #E8E9EB;
+	margin-top: .4rem;
+	display: block;
+}
+
+.container .message .content{
+	font-size: .4rem;
+	color: rgb(51,51,51);
+	padding: .4rem;
+}
+
+.container .message .action{
+	margin: 0 .4rem;
+	position: relative;
+	height: .9rem;
+	line-height: .9rem;
+	border-top: 1px solid #E8E9EB;
+	display: block;
+}
+
+
+.container .message .action-name{
+	color: rgb(102,102,102);
+	font-size: .3rem;
+}
+
+.container .message .action-status{
+	position: absolute;
+    top: 50%;
+    right: 0.5rem;
+    color: #fff;
+    padding: 0 .2rem;
+    border-radius: 5px;
+    background-color: #ccc;
+    height: .5rem;
+    line-height: .5rem;
+    transform: translate(0,-50%);
+}
+
+.container .message .action-status.active{
+	background-color: rgb(78,158,255);
+	background: -webkit-linear-gradient(left, rgb(78,158,255) , #b0d1f8); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right, rgb(78,158,255), #b0d1f8); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right, rgb(78,158,255), #b0d1f8); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right, rgb(78,158,255) , #b0d1f8); /* 标准的语法 */
+}
+
+.container .message .action img{
+	width: .2rem;
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translate(0, -50%);
+}

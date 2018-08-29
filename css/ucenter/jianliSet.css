@@ -1,0 +1,149 @@
+body{
+	background-color: rgb(242,242,242);
+}
+.setting{
+	height: 1.2rem;
+	line-height: 1.2rem;
+	border-bottom: 1px solid #E8E9EB;
+	padding:0 .5rem;
+	position: relative;
+	font-size: .45rem;
+	background-color: #fff;
+	margin-top: .5rem;
+}
+
+.input-label{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+    padding-left: 2.5rem;
+}
+
+.input-label input{
+	width: 88%;
+	border: 1px solid #E8E9EB;
+	font-size: .35rem;
+    height: .8rem;
+    line-height: .8rem;
+    margin-left: 2%;
+    padding-left: .5rem;
+    vertical-align: bottom;
+    margin-bottom: .2rem;
+    -webkit-appearance: none;
+}
+
+.arrow {
+	position: absolute;
+	top: 50%;
+	right: .5rem;
+	transform: translate(0, -50%);
+}
+
+.arrow .multi-select{
+	margin-right: 0;
+	color: rgb(153,153,153);
+	font-size: .4rem;
+	position: relative;
+}
+
+
+.footer{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    background-color: #fff;
+    padding: 0 .83rem;
+}
+
+.footer .btn {
+	background-color: rgb(30,127,245);
+	border-color: rgb(30,127,245);
+	font-size: .45rem;
+	height: 1.17rem;
+	padding: 0;
+	margin:.4rem 0;
+}
+
+.arrow .multi-select select{
+	height: 1.1rem;
+    border: none;
+    -webkit-appearance: none;
+    background-color: #fff;
+    color: rgb(153,153,153);
+    font-size: .4rem;
+    margin-right: .6rem;
+    direction: rtl;
+}
+
+
+.arrow1{
+  width: 0px;
+  height:0px;
+  line-height: 0px;
+  border-width: .2rem .2rem 0;
+  border-style: solid dashed dashed dashed;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  position: absolute;
+  top: 50%;
+  transform: translate(0,-50%);
+  right: 0;
+}
+
+.tip{
+	padding: .3rem .83rem;
+	font-size: .32rem;
+	color: rgb(153,153,153);
+}
+
+.no-hope{
+	padding: 0 .4rem;
+}
+
+.no-hope .no-hope-item{
+	width: 100%;
+	background-color: rgb(136,184,243);	
+	color: #fff;
+	margin-bottom: .2rem;
+	font-size: .45rem;
+	padding: 0 .3rem;
+	height: 1.2rem;
+	line-height: 1.2rem;
+}
+
+.no-hope .no-hope-item .text{
+	display: inline-block;
+	width: 85%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.add{
+	color: rgb(61,149,255);
+	font-size: .4rem;
+	padding: 0 .4rem;
+	text-align: right;
+}
+
+.del{
+	float: right;
+	font-size: .4rem;
+	display: inline-block;
+	vertical-align: bottom;
+}
+
+.enterpriseItem{
+	padding: .3rem .5rem;
+	background-color: #fff;
+	display: block;
+}
+
+.delete{
+    float: right;
+    font-size: .4rem;
+    color: #de0041;
+    display: inline-block;
+}

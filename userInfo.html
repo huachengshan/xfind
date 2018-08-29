@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>基本信息</title>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+      <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+      <link href="css/common.css" rel="stylesheet">
+      <link href="css/ucenter/userInfo.css" rel="stylesheet">
+      <link href="css/ucenter/nowCity.css" rel="stylesheet">
+      <script type="text/javascript" src="js/jquery.min.js"></script>
+      <script type="text/javascript" src="test.js"></script>
+      <script type="text/javascript" src="js/common.js"></script>
+      <script type="text/javascript" src="js/ucenter/userInfo.js"></script>
+   </head>
+   <body>
+    <div id="mainPage">
+     	<div class="setting">
+        <div class="model">
+          姓名
+        </div>
+        <div class="input-label">
+  		    <input type="text" name="username" id="username" placeholder="请输入姓名">
+        </div>
+      </div>
+      <div class="setting">
+        <div class="model">
+          性别
+        </div>
+        <div class="arrow">
+  		 <div class="multi-select">
+  		 	<div class="male" isCheck="1">
+  				<img src="images/male-yes.png">
+  				<span>男</span>
+  		 	</div>
+  			<div class="female" isCheck="0">
+  				<img src="images/female-no.png">
+  				<span>女</span>
+  		 	</div>
+  		 	<input type="hidden" name="sex" id="sex" value="M">
+  		 </div>
+        </div>
+      </div>
+     	<div class="setting">
+        <div class="model">
+          出生年月
+        </div>
+        <div class="arrow datetime" id="beginTime_arrow">
+      		<div class="text" id="beginTime_text">请选择</div>
+      		<img src="images/right-arrow.png">
+          <input type="date" name="beginTime" id="beginTime" value="" style="opacity: 0;" max="2018-01-01">
+        </div>
+      </div>
+      <div class="setting">
+        <div class="model">
+          最高学历
+        </div>
+        <div class="arrow">
+           <div class="multi-select">
+            <select id="degree">
+            </select>
+            <div class="arrow1"></div>
+           </div>
+        </div>
+      </div>
+      <div class="setting">
+        <div class="model">
+          工作时间
+        </div>
+        <div class="arrow datetime" id="endTime_arrow">
+          <div class="text" id="endTime_text">请选择</div>
+          <img src="images/right-arrow.png">
+          <input type="date" name="endTime" id="endTime" value="" style="opacity: 0;">
+        </div>
+      </div>
+      <div class="setting" id="nowCity-btn">
+        <div class="model">
+          现居城市
+        </div>
+        <div class="arrow">
+  		    <div class="text" id="nowArea_name"></div>
+          <input type="hidden" name="" id="nowArea_code">
+          <input type="hidden" name="" id="nowProvince_code">
+          <input type="hidden" name="" id="nowProvince_name">
+          <input type="hidden" name="" id="nowCity_code">
+          <input type="hidden" name="" id="nowCity_name">
+          <img src="images/right-arrow.png">
+        </div>
+      </div>
+      <div class="setting">
+        <div class="model">
+          目前状况
+        </div>
+        <div class="arrow">
+           <div class="multi-select">
+            <select id="currentSituation">
+            </select>
+            <div class="arrow1"></div>
+           </div>
+        </div>
+      </div>
+      <div class="setting" id="my-mobile">
+        <div class="model">
+          手机号码
+        </div>
+        <div class="arrow">
+  		<div class="update-lf" id="phone"></div>
+          <div class="update-rt">修改</div>
+        </div>
+      </div>
+      <div class="setting" id="my-email">
+        <div class="model">
+          邮箱地址
+        </div>
+        <div class="arrow">
+  		<div class="update-lf" id="email"></div>
+          <div class="update-rt">修改</div>
+        </div>
+      </div>
+      <div class="setting" id="area-btn">
+        <div class="model">
+          户籍/国籍
+        </div>
+        <div class="arrow">
+          <div class="text" id="countyArea_name">请选择</div>
+          <img src="images/right-arrow.png">
+        </div>
+      </div>
+      <div class="setting">
+        <div class="model">
+          身高
+        </div>
+        <div class="input-label">
+          <input type="text" name="height" id="height" placeholder="请输入身高">
+        </div>
+      </div>
+      <div class="setting">
+        <div class="model">
+          婚姻状况
+        </div>
+        <div class="arrow">
+           <div class="multi-select">
+            <select id="maritalStatus">
+            </select>
+            <div class="arrow1"></div>
+           </div>
+        </div>
+      </div>
+      <div class="setting">
+        <div class="model">
+          政治面貌
+        </div>
+        <div class="arrow">
+           <div class="multi-select">
+            <select id="politicalStatus">
+
+            </select>
+            <div class="arrow1"></div>
+           </div>
+        </div>
+      </div>
+      <div class="setting" style="margin-bottom: 2rem;">
+        <div class="model">
+          个人主页
+        </div>
+        <div class="input-label">
+          <input type="text" name="homePage" id="homePage" placeholder="请输入个人主页">
+        </div>
+      </div>
+      <div style="height: 1rem;"></div>
+      <div class="footer">
+           <button type="button" class="btn btn-primary btn-lg btn-block">保存</button>
+      </div>
+    </div>
+   
+
+    <!--现居城市-->
+    <div id="cityPage" style="display: none;"></div>
+
+    <!--户籍-->
+    <div id="areaPage" style="display: none;"></div>
+    <input type="hidden" name="countyProvince_name" id="countyProvince_name">
+    <input type="hidden" name="countyProvince_code" id="countyProvince_code">
+    <input type="hidden" name="countyCity_name" id="countyCity_name">
+    <input type="hidden" name="countyCity_code" id="countyCity_code">
+    <input type="hidden" name="countyArea_code" id="countyArea_code">
+   </body>
+</html>

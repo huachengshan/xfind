@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>手机绑定</title>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+      <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+      <link href="css/common.css" rel="stylesheet">
+      <link href="css/ucenter/changeLogin.css" rel="stylesheet">
+      <script type="text/javascript" src="js/jquery.min.js"></script>
+      <script type="text/javascript" src="js/common.js"></script>
+      <script type="text/javascript" src="js/ucenter/changeLogin.js"></script>
+   </head>
+   <body>
+      <div class="container">
+         <div class="phone-img">
+            <img src="images/phone-change.png">
+         </div>
+         <div class="current">您当前账号为：<span id="current"></span></div>
+         <div class="tips">更换后可用新账号登录</div>
+         <div class="input-label">
+            <input type="text" class="pwd border-old" name="mobile" id="mobile" placeholder="请输入您的手机号">
+         </div>
+         <div class="input-label">
+            <input type="text" class="pwd border-new vcode" name="vcode" id="vcode" placeholder="请输入验证码">
+            <input type="button" id="vcode_btn" class="vcode-btn" value="获取验证码">
+         </div>
+         <div class="footer">
+            <button id="changeBtn" type="button" class="btn btn-primary btn-lg btn-block">确定</button>
+         </div>
+      </div>
+   </body>
+</html>

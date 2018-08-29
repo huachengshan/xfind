@@ -1,0 +1,31 @@
+<footer>
+      <ul>
+         <li url="index.html"><img src="images/home.png"><div class="text">首页</div></li>
+         <li url="message.html"><img src="images/message.png"><div class="text">消息</div></li>
+         <li url="resume.html"><img src="images/jianli.png"><div class="text">简历</div></li>
+         <li url="my.html"><img src="images/personal.png"><div class="text">我的</div></li>
+      </ul>
+      <div style="clear: both;"></div>
+    </footer>
+    <script type="text/javascript">
+    	$(function(){
+    		  if(menu_index && menu_index!=0){
+              var img = $("footer ul li img")[menu_index-1];
+              img.src = img.src.replace(".png", "-select.png");
+              $("footer ul li .text")[menu_index-1].className += " active";
+          }
+
+          $(document).on("click", "footer ul li", function(){
+              var url = $(this).attr("url");
+              if(!checkLogin() && url!='index.html') {
+                  wx_navigate("/pages/redirect/redirect?url=login.html");
+                  // location.href = "/project/login.html";
+                  return;
+              }
+              if(location.href.indexOf(url) == -1){
+                location.href = "/project/"+url + "?tt="+Math.random();
+                  // wx_redirect("/pages/redirect/redirect?url="+url);
+              }
+          });
+    	});
+    </script>

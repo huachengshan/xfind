@@ -1,0 +1,145 @@
+body{
+	background-color: rgb(242,242,242);
+}
+
+.tab{
+	height: 1.2rem;
+	line-height: 1.2rem;
+	background-color: #fff;
+	border-bottom: 1px solid #E8E9EB;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 998;
+}
+
+.tab ul {
+	margin-bottom:0;
+}
+
+.tab ul li{
+	list-style: none;
+	width: 25%;
+	text-align: center;
+	float: left;
+}
+
+.tab .tab-item{;
+	font-size: .45rem;
+	height:1.2rem;
+	display: inline-block;
+	position: relative;
+}
+
+.tab .active{
+	color: rgb(78,158,255);
+	border-bottom: 2px solid rgb(78,158,255);
+}
+
+.tab .num{
+	position: absolute;
+	top: 4px;
+	width: 16px;
+	height: 16px;
+	right: -7px;
+	line-height: normal;
+	padding-top: 2.5px;
+	padding-left: 0px;
+	background-color: rgb(78,158,255);
+	font-size: 10px;
+	border-radius: 50%;
+	color: #fff;
+
+    background: -webkit-linear-gradient(left, rgb(78,158,255) , #b0d1f8); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right, rgb(78,158,255), #b0d1f8); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right, rgb(78,158,255), #b0d1f8); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right, rgb(78,158,255) , #b0d1f8); /* 标准的语法 */
+
+}
+
+.myFocus{
+	background-color: #fff;
+	height: 2rem;
+	border-bottom: 1px solid #E8E9EB;
+	padding:.2rem .4rem;
+	position: relative;
+	display: block;
+}
+
+.company{
+	font-size: .45rem;
+	color: rgb(51,51,51);
+	font-weight: 700;
+	width:80%;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.category{
+	font-size: .3rem;
+	font-weight: 500;
+	color: rgb(30,127,245);
+}
+
+.tags{
+	margin-left: 12px;
+	font-size: .3rem;
+	color: rgb(153,153,153);
+}
+
+.address{
+	font-size: .3rem;
+	color:rgb(102,102,102);
+}
+
+.arrow img{
+	position: absolute;
+	width: .3rem;
+	top: 50%;
+	right: .2rem;
+	transform: translate(0, -50%);
+}
+
+.myFocus .progress-container{
+	position: absolute;
+	/*width: 40%;*/
+	right: 0;
+	top: 0;
+	height: 2rem;
+	padding: .2rem 0;
+}
+
+.myFocus .progress-container .my-progress{
+	position: absolute;
+	top: 0;
+	margin-right: .2rem;
+	height: 2rem;
+	width: 2rem;
+}
+
+.myFocus .progress-container .my-progress .desc{
+	position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    text-align: center;
+    font-size: .35rem;
+    padding: 0 7px;
+    margin-top: .1rem;
+    line-height: .35rem;
+
+}
+
+.myFocus .progress-container .lf{
+	right: 50%;
+}
+
+.myFocus .progress-container .rt{
+	right: .2rem;
+}
+
+.myFocus .progress-container .my-progress canvas{
+	position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+}

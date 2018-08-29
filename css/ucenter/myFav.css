@@ -1,0 +1,89 @@
+body{
+	background-color: rgb(242,242,242);
+}
+.myFocus{
+	background-color: #fff;
+	height: 2rem;
+	border-bottom: 1px solid #E8E9EB;
+	padding:.2rem .5rem;
+	position: relative;
+	display: block;
+}
+
+.company{
+	font-size: .45rem;
+	color: rgb(51,51,51);
+	font-weight: 700;
+	width:70%;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.category{
+	font-size: .3rem;
+	font-weight: 500;
+	color: rgb(30,127,245);
+}
+
+.tags{
+	margin-left: 12px;
+	font-size: .3rem;
+	color: rgb(153,153,153);
+}
+
+.address{
+	font-size: .3rem;
+	color:rgb(102,102,102);
+}
+
+.arrow img{
+	position: absolute;
+	width: .3rem;
+	top: 50%;
+	right: .5rem;
+	transform: translate(0, -50%);
+}
+
+.myFocus .progress-container{
+	position: absolute;
+	width: 50%;
+	right: 0;
+	top: 0;
+	height: 2rem;
+	padding: .2rem 0;
+}
+
+.myFocus .progress-container .my-progress{
+	position: absolute;
+	top: 0;
+	margin-right: .2rem;
+	height: 100%;
+	width: 2rem;
+}
+
+.myFocus .progress-container .my-progress .desc{
+	position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    text-align: center;
+    font-size: .35rem;
+    padding: 0 7px;
+    margin-top: .1rem;
+    line-height: .35rem;
+
+}
+
+.myFocus .progress-container .lf{
+	right: 50%;
+}
+
+.myFocus .progress-container .rt{
+	right: .6rem;
+}
+
+.myFocus .progress-container .my-progress canvas{
+	position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+}

@@ -1,0 +1,112 @@
+body{
+	background-color: rgb(238,238,238);
+}
+
+header{
+
+}
+
+header .avatar {
+	text-align: center;
+	padding-top: .6rem;
+	padding-bottom: .2rem;
+}
+
+header .avatar img{
+	height: 3rem;
+	width: 3rem;
+	border-radius: 1.5rem;
+	border: 1px solid #fff;
+}
+
+header .avatar .username{
+	font-size: .45rem;
+	margin-top: .2rem;
+	padding: 0 0.5%;
+}
+
+.jianli-container {
+	background-color: rgb(238,238,238);
+}
+
+.jianli-container .one,.two{
+	margin:0 .3rem;
+	border-radius: 5px;
+}
+
+.setting{
+	line-height: 1.1rem;
+	position: relative;
+	font-size: .4rem;
+	background-color: #fff;
+}
+
+.setting .ico{
+    height: .45rem;
+    left: .3rem;
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    margin-top: -1px;
+    border: 0;
+}
+
+.setting .model{
+	margin-left: .9rem;
+	border-bottom: 1px solid #E8E9EB;
+}
+
+.input-label{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+    padding-left: 2.5rem;
+}
+
+.input-label input{
+	width: 100%;
+	border: 0;
+	font-size: .4rem;
+    padding-right: .5rem;
+    text-align: right;
+    height: 1.4rem;
+}
+
+.arrow {
+	position: absolute;
+	top: 50%;
+	right: .3rem;
+	transform: translate(0, -50%);
+}
+
+
+.arrow .text{
+	vertical-align: middle;
+	display: inline-block;
+	color: rgb(153,153,153);
+	font-size: .4rem;
+}
+
+.arrow .active{
+	color: rgb(78,158,255);
+}
+
+.arrow img{
+	vertical-align: middle;
+	width: .2rem;
+}
+
+.one .noborder {
+	border: 0;
+}
+
+.two .noborder {
+	border: 0;
+}
+
+
+
+
+
+

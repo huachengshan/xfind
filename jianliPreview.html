@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>简历预览</title>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+      <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+      <link href="css/common.css" rel="stylesheet">
+      <link href="css/ucenter/jianliPreview.css" rel="stylesheet">
+      <script type="text/javascript" src="js/jquery.min.js"></script>
+      <script type="text/javascript" src="js/common.js"></script>
+      <script type="text/javascript" src="js/ucenter/jianliPreview.js"></script>
+   </head>
+   <body>
+      <div id="container" style="display: none;">
+         <div class="my-container">
+            <div class="model">
+               <div class="model-title">
+                  <img src="images/icon-1.png">
+                  <span>个人信息</span>
+               </div>
+               <div class="photo">
+                  <img id="avatar" src="images/photo.png">
+                  <div class="info1">
+                     <div class="user-name" id="username"></div>
+                     <div class="age"><span id="sex"></span>&nbsp;|&nbsp;<span id="age"></span>(<span id="birthday"></span>)</div>
+                     <div class="exp"><span id="workYear"></span>/<span id="degree"></span></div>
+                  </div>
+               </div>
+               <div class="info2">
+                  <div class="item">
+                     <div class="tip">婚姻状况：</div>
+                     <div class="val" id="marry"></div>
+                  </div>
+                  <div class="item">
+                     <div class="tip">身高：</div>
+                     <div class="val" id="height"></div>
+                  </div>
+                  <div class="item">
+                     <div class="tip">现居城市：</div>
+                     <div class="val" id="nowCity"></div>
+                  </div>
+                  <div class="item">
+                     <div class="tip">户口所在地：</div>
+                     <div class="val" id="area"></div>
+                  </div>
+                  <div class="item">
+                     <div class="tip">手机号码：</div>
+                     <div class="val" id="phone"></div>
+                  </div>
+                  <div class="item">
+                     <div class="tip">邮箱：</div>
+                     <div class="val" id="email"></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="my-container">
+            <div class="model">
+               <div class="model-title">
+                  <img src="images/icon-2.png">
+                  <span>求职意向</span>
+               </div>
+               <div class="info2 m2">
+                  <div class="item">
+                     <div class="tip">工作性质：</div>
+                     <div class="val" id="workType"></div>
+                  </div>
+                  <div class="item">
+                     <div class="tip">工作地点：</div>
+                     <div class="val" id="workCity"></div>
+                  </div>
+                  <div class="item">
+                     <div class="tip">从事行业：</div>
+                     <div class="val" id="industry"></div>
+                  </div>
+                  <div class="item">
+                     <div class="tip">职位类别：</div>
+                     <div class="val" id="position"></div>
+                  </div>
+                  <div class="item">
+                     <div class="tip">薪资待遇：</div>
+                     <div class="val" id="salary"></div>
+                  </div>
+                  <!--div class="item">
+                     <div class="tip">公司性质：</div>
+                     <div class="val">不限</div>
+                  </div-->
+                  <div class="item">
+                     <div class="tip">工作状态：</div>
+                     <div class="val" id="currStatus"></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="my-container">
+            <div class="model">
+               <div class="model-title">
+                  <img src="images/icon-3.png">
+                  <span>教育背景</span>
+               </div>
+               <div style="height: .4rem;"></div>
+               <div class="exp-container" id="edu-container">
+                  
+               </div>
+            </div>
+         </div>
+         <div class="my-container">
+            <div class="model">
+               <div class="model-title">
+                  <img src="images/icon-3.png">
+                  <span>工作/实习经历</span>
+               </div>
+               <div style="height: .4rem;"></div>
+               <div class="exp-container" id="work-container"></div>
+            </div>
+         </div>
+         <div class="my-container">
+            <div class="model">
+               <div class="model-title">
+                  <img src="images/icon-3.png">
+                  <span>项目经验</span>
+               </div>
+               <div style="height: .4rem;"></div>
+               <div class="exp-container" id="project-container"></div>
+            </div>
+         </div>
+         <div class="my-container">
+            <div class="model">
+               <div class="model-title">
+                  <img src="images/icon-3.png">
+                  <span>培训经历</span>
+               </div>
+               <div style="height: .4rem;"></div>
+               <div class="exp-container" id="skill-container"></div>
+            </div>
+         </div>
+         <div class="my-container">
+            <div class="model">
+               <div class="model-title">
+                  <img src="images/icon-4.png">
+                  <span>自我简介</span>
+               </div>
+               <div class="self">
+                  <div class="font5" id="evaluation">
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div style="height: 2rem;"></div>
+         <div class="footer">
+            <button id="edit" type="button" class="btn btn-primary btn-lg">编辑</button>
+            <button id="refresh" type="button" class="btn btn-primary btn-lg">刷新简历</button>
+         </div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,32 @@
+.evaluation{
+	height: 80%;
+    width: 100%;
+    border: 0;
+    padding: .4rem .6rem;
+    font-size: .4rem;
+    resize: none;
+}
+
+.input-tip{
+    line-height: 30px;
+    background-color: rgb(238,238,238);
+    text-align: left;
+	padding-left: .83rem;
+}
+
+.footer{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-color: #fff;
+    padding: 0 .83rem;
+}
+
+.footer .btn {
+	background-color: rgb(30,127,245);
+	border-color: rgb(30,127,245);
+	font-size: .45rem;
+	height: 1.17rem;
+	padding: 0;
+	margin:.4rem 0;
+}

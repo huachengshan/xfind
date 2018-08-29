@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>职位列表</title>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+      <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+      <link href="css/common.css" rel="stylesheet">
+      <link href="css/dropload.css" rel="stylesheet">
+      <link href="css/ucenter/jobList.css" rel="stylesheet">
+      <script type="text/javascript" src="js/jquery.min.js"></script>
+      <script type="text/javascript" src="js/circle-progress.js"></script>
+      <script type="text/javascript" src="js/common.js"></script>
+      <script type="text/javascript" src="js/dropload.min.js"></script>
+      <script type="text/javascript" src="js/pagination.js"></script>
+      <script type="text/javascript" src="js/ucenter/jobList.js"></script>
+   </head>
+   <body>
+   	<header>
+
+	   	<div class="search">
+	   		<img src="images/search.png">
+        <form action="javascript:submit();"> 
+			     <input type="search" name="search" placeholder="搜索职位" id="keyword">
+        </form>
+	   	</div>
+	   	<div class="sort">
+			<ul>
+				<li slide="sort_default">默认排序<img src="images/select.png"></li>
+				<li slide="sort_time">发布时间<img src="images/select.png"></li>
+				<li slide="sort_jianli">简历匹配度<img src="images/select.png"></li>
+				<li slide="sort_testing">性格匹配度<img src="images/select.png"></li>
+			</ul>
+	   	</div>
+      <div class="sort_container sort_default" flag="sort_default">
+          <div class="sort_item active" sortKey="" sortType="">默认排序</div>
+          <div class="sort_item" sortKey="receivedResumeCount" sortType="-1">智能排序</div>
+          <div class="sort_item blank"></div>
+      </div>
+      <div class="sort_container sort_time" flag="sort_time">
+          <div class="sort_item" sortKey="createdDt" sortType="-1">发布时间倒序</div>
+          <div class="sort_item" sortKey="createdDt" sortType="1">发布时间正序</div>
+          <div class="sort_item blank"></div>
+      </div>
+      <div class="sort_container sort_jianli" flag="sort_jianli">
+          <div class="sort_item" sortKey="receivedResumeCount" sortType="-1">简历匹配度倒序</div>
+          <div class="sort_item" sortKey="receivedResumeCount" sortType="1">简历匹配度正序</div>
+          <div class="sort_item blank"></div>
+      </div>
+      <div class="sort_container sort_testing" flag="sort_testing">
+          <div class="sort_item">性格匹配度倒序</div>
+          <div class="sort_item">性格匹配度正序</div>
+          <div class="sort_item blank"></div>
+      </div>
+   	</header>
+    <div class="zhezhao" style="display: none;"></div>
+   	<div style="height: 2.9rem;"></div>
+    <div id="content">
+        <div id="job-list">
+        </div>
+    </div>
+   </body>
+</html>

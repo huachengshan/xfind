@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>附件列表</title>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+      <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+      <link href="css/common.css" rel="stylesheet">
+      <link href="css/ucenter/attachment.css" rel="stylesheet">
+      <link href="css/ucenter/addAttachment.css" rel="stylesheet">
+      <script type="text/javascript" src="js/jquery.min.js"></script>
+      <script type="text/javascript" src="test.js"></script>
+      <script type="text/javascript" src="js/common.js"></script>
+      <script type="text/javascript" src="js/ucenter/attachment.js"></script>
+   </head>
+   <body>
+    <div id="mainPage">
+      <div class="setting">
+        <div class="model">
+          附件
+        </div>
+        <form id="uploadForm" enctype="multipart/form-data">
+          <div class="arrow">
+            <div class="add" id="add-btn">添加</div>
+            <input type="file" name="file" id="fileupload" accept="image/*" multiple style="display: none;">
+          </div>
+        </form>
+      </div>
+      <div class="no-hope" id="attachmentList">
+        
+      </div>
+      <div style="height: 2rem;"></div>
+    </div>
+    <!--添加附件-->
+    <div id="page1" style="display: none;height: 100%;"></div>
+
+    <div class="zhezhao" style="display: none;"></div>
+    <div class="img-preview">
+      <img id="img-preview" src="images/img-3.png">
+    </div>
+   </body>
+</html>

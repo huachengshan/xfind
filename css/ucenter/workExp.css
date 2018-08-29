@@ -1,0 +1,151 @@
+
+.setting{
+	height: 1.5rem;
+	line-height: 1.5rem;
+	border-bottom: 1px solid #E8E9EB;
+	padding:0 .5rem;
+	position: relative;
+	font-size: .45rem;
+}
+
+.input-label{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+    padding-left: 2.5rem;
+}
+
+.input-label input{
+	width: 100%;
+	border: 0;
+	font-size: .4rem;
+    padding-right: .5rem;
+    text-align: right;
+    height: 1.4rem;
+}
+
+.arrow {
+	position: absolute;
+	top: 50%;
+	right: .5rem;
+	transform: translate(0, -50%);
+}
+
+.arrow .multi-select{
+	margin-right: 0;
+	color: rgb(153,153,153);
+	font-size: .4rem;
+}
+
+.arrow .multi-select input[type=checkbox]{
+	vertical-align: -2px;
+	margin-right: 5px;
+	margin-left: 5px;
+	-webkit-appearance:checkbox;
+}
+
+.arrow .date{
+	float: right;
+}
+
+.arrow .date .btn{
+	color: rgb(153,153,153);
+	font-size: .4rem;
+	background-color: #fff;
+    margin-bottom: 1px;
+    padding-right: 0;
+}
+
+.arrow .text{
+	vertical-align: middle;
+	display: inline-block;
+	margin-right: .3rem;
+	color: rgb(153,153,153);
+	font-size: .4rem;
+}
+
+.arrow img{
+	vertical-align: middle;
+	width: .2rem;
+}
+
+.evaluation{
+	height: 5rem;
+    width: 100%;
+    border: 0;
+    padding: .4rem .6rem;
+    font-size: .4rem;
+    text-align: left;
+}
+
+.footer{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    background-color: #fff;
+    padding: 0 .83rem;
+}
+
+.footer .btn {
+	background-color: rgb(30,127,245);
+	border-color: rgb(30,127,245);
+	font-size: .45rem;
+	height: 1.17rem;
+	padding: 0;
+	margin:.4rem 0;
+}
+
+.arrow .multi-select select{
+	height: 1.4rem;
+    border: none;
+    -webkit-appearance: none;
+    background-color: #fff;
+    color: rgb(153,153,153);
+    font-size: .4rem;
+    margin-right: .6rem;
+    direction: rtl;
+}
+
+
+.arrow1{
+  width: 0px;
+  height:0px;
+  line-height: 0px;
+  border-width: .2rem .2rem 0;
+  border-style: solid dashed dashed dashed;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  position: absolute;
+  top: 50%;
+  transform: translate(0,-50%);
+  right: 0;
+}
+
+.datetime {
+	width: 4rem;
+	text-align: right;
+	background-color: #fff;
+	right: 0;
+	padding-right: .5rem;
+	line-height: 1.4rem;
+}
+
+input[type="date"]{
+	background-color: #fff;
+	height: 1rem;
+	border: 0;
+	width: auto;
+	position: absolute;
+	right: 0;
+	top: .25rem;
+	width: 3rem;
+}
+
+#position_name{
+	width: 6rem;
+    text-align: right;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}

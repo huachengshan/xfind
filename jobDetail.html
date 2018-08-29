@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>职位详情</title>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+      <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+      <link href="css/common.css" rel="stylesheet">
+      <link href="css/ucenter/jobDetail.css" rel="stylesheet">
+      <script type="text/javascript" src="js/jquery.min.js"></script>
+      <script type="text/javascript" src="js/circle-progress.js"></script>
+      <script type="text/javascript" src="js/common.js"></script>
+      <script type="text/javascript" src="js/ucenter/jobDetail.js"></script>
+   </head>
+   <body>
+    <div class="myFocus no-border">
+      <div class="company2" id="jobName">
+        
+      </div>
+      <div class="bonus" id="salary">
+        
+      </div>
+      <div class="address2" id="companyName" companyId="">
+
+      </div>
+      <div class="progress-container">
+        <div id="matchResume" class="my-progress lf" progress="0"><div class="desc">性格匹配</div></div>
+        <!-- <div class="my-progress rt" progress="0.8"><div class="desc">简历匹配</div></div> -->
+      </div>
+    </div> 
+    <div class="intr1" id="labels"></div> 
+    <div class="intr1"><span id="companyType"></span><span id="sep">：</span><span id="people"></span></div>
+    <div class="intr2">
+      <div class="item">
+        <img src="images/locate2.png"><span id="city"></span>
+      </div>
+      <div class="item">
+        <img src="images/people.png"><span id="peopleNumber"></span>
+      </div>
+      <div class="item">
+        <img src="images/education.png"><span id="education"></span>
+      </div>
+      <div class="item">
+        <img src="images/job-type.png"><span id="jobType"></span>
+      </div>
+      <div class="item">
+        <span id="publishTime"></span>
+      </div>
+    </div>
+    <div class="intr3">
+      <ul id="fuliList">
+        <li code="C_006_09"><img src="images/job-1.png"><span>五险一金</span></li>
+        <li code="C_006_08"><img src="images/job-1.png"><span>年底双薪</span></li>
+        <li code="C_006_07"><img src="images/job-1.png"><span>绩效奖励</span></li>
+        <li code="C_006_06"><img src="images/job-2.png"><span>年底分红</span></li>
+        <li code="C_006_05"><img src="images/job-3.png"><span>股票期权</span></li>
+        <li code="C_006_04"><img src="images/job-3.png"><span>加班补助</span></li>
+        <li code="C_006_03"><img src="images/job-4.png"><span>交通补助</span></li>
+        <li code="C_006_02"><img src="images/job-5.png"><span>住房补贴</span></li>
+        <li code="C_006_01"><img src="images/job-5.png"><span>包吃包住</span></li>
+      </ul>
+      <div style="clear:both;"></div>
+    </div>
+    <div class="split"></div>
+    <div class="introduce">
+      <div class="title"><span></span>岗位职责</div>
+      <div class="content" id="positionDesc">
+        
+      </div>
+      <div class="title"><span></span>任职要求</div>
+      <div class="content" id="memo"></div>
+      <div class="title"><span></span>公司地址</div>
+      <div class="content" id="address">
+        
+      </div>
+    </div>
+    <div class="split"></div>
+    <div class="all-job">相似职位</div>
+    <div id="seemLike">
+    </div>
+    <div style="height: 1.6rem;"></div>
+    <div class="footer">
+      <!--div class="btn-gro selected"><img src="images/share.png"><span>分享</span></div-->
+      <div id="fav" class="btn-gro" collectionId=""><img src="images/fav.png"><span>收藏</span></div>
+     <button id="sendResume" type="button" class="btn btn-primary btn-lg btn-block">投递简历</button>
+    </div>
+   </body>
+</html>

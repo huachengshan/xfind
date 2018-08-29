@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>教育经历</title>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+      <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+      <link href="css/common.css" rel="stylesheet">
+      <link href="css/ucenter/educationExp.css" rel="stylesheet">
+      <link href="css/ucenter/speciality.css" rel="stylesheet">
+      <script type="text/javascript" src="js/jquery.min.js"></script>
+      <script type="text/javascript" src="test.js"></script>
+      <script type="text/javascript" src="js/common.js"></script>
+      <script type="text/javascript" src="js/ucenter/educationExp.js"></script>
+   </head>
+   <body>
+    <div id="mainPage">
+     	<div class="setting">
+        <div class="model">
+          学校名称
+        </div>
+        <div class="input-label">
+  		    <input type="text" name="schoolName" id="schoolName" placeholder="请输入学校名称">
+        </div>
+      </div>
+      <div class="setting">
+        <div class="model">
+          学历/学位
+        </div>
+        <div class="arrow">
+          <div class="multi-select">
+              <select id="degree">
+              </select>
+              <div class="arrow1"></div>
+              <input type="checkbox" name="fullTime" id="fullTime">
+              <span style="color: rgb(64,145,244);">全日制</span>
+          </div>
+        </div>
+      </div>
+     	<div class="setting">
+        <div class="model">
+          入学时间
+        </div>
+        <div class="arrow datetime" id="beginTime_arrow">
+          <div class="text" id="beginTime_text">请选择</div>
+          <img src="images/right-arrow.png">
+          <input type="date" name="beginTime" id="beginTime" value="" style="opacity: 0;">
+        </div>
+      </div>
+      <div class="setting">
+        <div class="model">
+          毕业时间
+        </div>
+        <div class="arrow datetime" id="endTime_arrow">
+          <div class="text" id="endTime_text">至今</div>
+          <img src="images/right-arrow.png">
+          <input type="date" name="endTime" id="endTime" value="" style="opacity: 0;">
+        </div>
+      </div>
+      <div class="setting" id="majors-btn">
+        <div class="model">
+          专业名称
+        </div>
+        <div class="arrow">
+          <div class="text" id="majors">请选择</div>
+          <img src="images/right-arrow.png">
+        </div>
+      </div>
+      <div class="school">在校情况说明</div>
+      <textarea name="description" class="evaluation" id="description" placeholder="请简单描述一下您的在校经历..."></textarea>
+      <div class="footer">
+           <button id="addExp-btn" type="button" class="btn btn-primary btn-lg btn-block">保存</button>
+      </div>
+    </div>
+
+    <!--选择专业-->
+    <div id="page2" style="display: none;"></div>
+    <input type="hidden" name="majors_code" id="majors_code">
+   </body>
+</html>

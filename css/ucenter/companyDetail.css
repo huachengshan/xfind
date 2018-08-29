@@ -1,0 +1,194 @@
+header{
+	padding: .2rem .4rem;
+	border-bottom: 1px solid #E8E9EB;
+}
+header .logo{
+	width: 45%;
+	border: 1px solid #E8E9EB;
+	border-radius: 5px;
+	/*padding: .2rem .4rem;*/
+	display: inline-block;
+    vertical-align: top;
+}
+
+header .prop{
+	display: inline-block;
+    vertical-align: top;
+    margin-top: .1rem;
+    width: 53%;
+}
+
+header .prop img{
+	height: .32rem;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+header .prop .prop1{
+	font-size: .4rem;
+	font-weight: 700;
+}
+
+header .prop .prop2,.prop3{
+	font-size: .34rem;
+	margin-top: .2rem;
+	color: rgb(102,102,102);
+}
+
+header .prop span{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.company-address{
+	height: .8rem;
+	line-height: .8rem;
+	padding-left: .4rem;
+	border-bottom: 1px solid #E8E9EB;
+	font-size: .34rem;
+}
+
+.introduce{
+	padding: .4rem;
+}
+
+.introduce .title{
+	font-size: .4rem;
+	font-weight: 700;
+}
+
+.introduce .content{
+	padding-top: .2rem;
+	padding-bottom: .1rem;
+	font-size: .34rem;
+	color: rgb(102,102,102);
+	text-indent: .4rem;
+}
+
+.style .title{
+	padding-left: .4rem;
+	padding-bottom: .2rem;
+	font-size: .35rem;
+	border-bottom: 1px solid #E8E9EB;
+}
+
+.swiper-container{
+	padding:.3rem .2rem;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.all-job{
+	padding:.2rem 0;
+	padding-left: .4rem;
+	font-size: .35rem;
+	border-bottom: 1px solid #E8E9EB;
+}
+
+.myFocus{
+	background-color: #fff;
+	height: 2rem;
+	border-bottom: 1px solid #E8E9EB;
+	padding:.2rem .5rem;
+	position: relative;
+	display: block;
+}
+
+.company{
+	font-size: .45rem;
+	color: rgb(51,51,51);
+	font-weight: 700;
+	width:80%;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.category{
+	font-size: .3rem;
+	font-weight: 500;
+	color: rgb(30,127,245);
+	width:50%;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.tags{
+	margin-left: 12px;
+	font-size: .3rem;
+	color: rgb(153,153,153);
+}
+
+.address{
+	font-size: .3rem;
+	color:rgb(102,102,102);
+}
+
+.arrow img{
+	position: absolute;
+	width: .3rem;
+	top: 50%;
+	right: .5rem;
+	transform: translate(0, -50%);
+}
+
+.myFocus .progress-container{
+	position: absolute;
+	/*width: 50%;*/
+	right: 0;
+	top: 0;
+	height: 2rem;
+	padding: .2rem 0;
+}
+
+.myFocus .progress-container .my-progress{
+	position: absolute;
+	top: 0;
+	height: 100%;
+	width: 2rem;
+}
+
+.myFocus .progress-container .my-progress .desc{
+	position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    text-align: center;
+    font-size: .35rem;
+    padding: 0 7px;
+    margin-top: .1rem;
+    line-height: .35rem;
+
+}
+
+.myFocus .progress-container .lf{
+	right: 45%;
+}
+
+.myFocus .progress-container .rt{
+	right: 0;
+}
+
+.myFocus .progress-container .my-progress canvas{
+	position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+
+.footer{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    background-color: #fff;
+    padding: 0 .4rem;
+    z-index: 998;
+}
+
+.footer .btn {
+	background-color: rgb(30,127,245);
+	border-color: rgb(30,127,245);
+	font-size: .45rem;
+	height: 1.17rem;
+	padding: 0;
+	margin:.2rem 0;
+}

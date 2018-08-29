@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>简历设置</title>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+      <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+      <link href="css/common.css" rel="stylesheet">
+      <link href="css/ucenter/jianliSet.css" rel="stylesheet">
+      <link href="css/ucenter/addShield.css" rel="stylesheet">
+      <script type="text/javascript" src="js/jquery.min.js"></script>
+      <script type="text/javascript" src="test.js"></script>
+      <script type="text/javascript" src="js/common.js"></script>
+      <script type="text/javascript" src="js/ucenter/jianliSet.js"></script>
+   </head>
+   <body>
+   	<div id="mainPage">
+	    <div class="setting">
+	      <div class="model">
+	        简历名称
+	      </div>
+	      <div class="input-label">
+	        <input type="text" name="" placeholder="请输入简历名称" id="resumeName">
+	      </div>
+	    </div>
+	    <div class="setting">
+	      <div class="model">
+	        隐私设置
+	      </div>
+	      <div class="arrow">
+	         <div class="multi-select">
+	          <select id="resumeState">
+	            <option value="open">企业能看到我</option>
+	            <option value="close">企业看不到我</option>
+	          </select>
+	          <div class="arrow1"></div>
+	         </div>
+	      </div>
+	    </div>
+	    <div class="tip shield" style="display: none;">不希望以下企业搜索到我的简历(最多10个)</div>
+	    <div class="no-hope shield" style="display: none;">
+	    	<!-- <div class="no-hope-item">胜多负少<span class="del">删除</span></div> -->
+	    </div>
+	    <div class="add shield" id="addshield" style="display: none;">+&nbsp;添加</div>
+	    <div class="footer">
+	         <button id="save" type="button" class="btn btn-primary btn-lg btn-block">保存</button>
+	    </div>
+    </div>
+    <div id="page" style="display: none;">
+		<input type="type" name="company" class="shield-name" placeholder="输入需要屏蔽的企业名称" id="shieldName">
+		<div id="enterpriseList">
+			
+		</div>
+        <div style="height: 2rem;"></div>
+        <div class="footer">
+           <button id="shieldBtn" type="button" class="btn btn-primary btn-lg btn-block">确定</button>
+        </div>
+
+    </div>
+   </body>
+</html>

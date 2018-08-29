@@ -1,0 +1,218 @@
+body{
+/*	background-color: rgb(242,242,242);*/
+}
+
+.search {
+    padding: .1rem .5rem;
+    position: relative;
+}
+
+.search .search-tips{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+}
+
+.search .search-tips .text{
+	color: rgb(153,153,153);
+	vertical-align: middle;
+	font-size: .4rem;
+}
+
+.search img{
+    width: .45rem;
+    vertical-align: middle;
+    margin-right: 2px;
+    display: inline;
+}
+
+.search input {
+    -webkit-appearance: none;
+    height: .9rem;
+    width: 100%;
+    border: 0;
+    border-radius: .5rem;
+    font-size:.45rem;
+    background-color: rgb(236,236,236);
+    text-align: center;
+}
+
+.index-banner{
+	height: 5rem;
+	position: relative;
+	margin-top: 1px;
+}
+
+.index-banner img{
+	width: 100%;
+	height: 100%;
+}
+
+.index-banner .title{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform:translate(-50%,-50%);
+	text-align: center;
+}
+
+.index-banner .title .main-title{
+	font-size:.8rem; 
+	color:#fff;
+}
+
+.index-banner .title .sub-title{
+	color: #fff;
+	font-size: .4rem;
+	background-color: rgba(51,51,51,0.2);
+	margin: 0 .6rem;
+	padding: 1px 0;
+	border-radius: 2px;
+}
+
+.menu{
+	height: 2.2rem;
+	padding: .35rem .4rem;
+}
+
+.menu ul {
+    margin-bottom: 0px;
+}
+
+.menu ul li {
+    float: left;
+    width: 33%;
+    list-style: none;
+    text-align: center;
+    font-size: .4rem;
+    color: rgb(51,51,51);
+}
+
+.menu ul .ft{
+	text-align:left;
+}
+
+.menu ul .ft img{
+	margin-left:.45rem;
+}
+
+.menu ul .rt{
+	text-align:right;
+}
+
+.menu ul .rt img{
+	margin-right: .45rem;
+}
+
+.menu ul li img{
+    height: .7rem;
+}
+
+.menu .text{
+	margin-top: 10px;
+}
+
+.split-line{
+	height: .4rem;
+	width: 100%;
+	background-color: rgb(236,236,236);
+}
+
+.hot{
+    padding: 0 .4rem;
+    font-size: .45rem;
+    border-bottom: 1px solid #E8E9EB;
+    margin-top: .25rem;
+}
+
+.myFocus{
+	background-color: #fff;
+	height: 2.4rem;
+	border-bottom: 1px solid #E8E9EB;
+	padding:.4rem;
+	position: relative;
+	cursor: pointer;
+	display: block;
+}
+
+.myFocus:last-child{
+	border: 0;
+}
+
+.company{
+	font-size: .45rem;
+	color: rgb(51,51,51);
+	font-weight: 700;
+	text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 80%;
+}
+
+.category{
+	font-size: .3rem;
+	font-weight: 500;
+	color: rgb(30,127,245);
+}
+
+.tags{
+	margin-left: 12px;
+	font-size: .3rem;
+	color: rgb(153,153,153);
+}
+
+.address{
+	font-size: .3rem;
+	color:rgb(102,102,102);
+}
+
+.arrow img{
+	position: absolute;
+	width: .3rem;
+	top: 50%;
+	right: .5rem;
+	transform: translate(0, -50%);
+}
+
+.myFocus .progress-container{
+	position: absolute;
+	/*width: 40%;*/
+	right: 0;
+	top: 0;
+	height: 2.4rem;
+	padding: .2rem 0;
+}
+
+.myFocus .progress-container .my-progress{
+	position: absolute;
+	top: 0;
+	height: 100%;
+	width: 2rem;
+}
+
+.myFocus .progress-container .my-progress .desc{
+	position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    text-align: center;
+    font-size: .35rem;
+    padding: 0 7px;
+    margin-top: .1rem;
+    line-height: .35rem;
+
+}
+
+.myFocus .progress-container .lf{
+	right: 50%;
+}
+
+.myFocus .progress-container .rt{
+	right: 0;
+}
+
+.myFocus .progress-container .my-progress canvas{
+	position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+}

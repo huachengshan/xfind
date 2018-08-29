@@ -1,0 +1,174 @@
+.container{
+	padding: .83rem;
+	height: 100%;
+}
+
+.container .header{
+	line-height: .69rem;
+	position: relative;
+}
+
+.container .header .title{
+	font-size: .51rem;
+	font-weight: 400;
+	color: #333;
+	margin:.13rem 0 1.07rem;
+}
+
+.container .header .register,.login{
+	position: absolute;
+	right: 0;
+	top: 0;
+	font-size: .4rem;
+	color: rgb(30,127,245);
+}
+
+.container .header .login{
+	display: none;
+}
+
+.container .input-text{
+	border: 0;
+    border-bottom: 1px solid #E8E9EB;
+    font-size: .4rem;
+    width: 100%;
+    padding: .27rem 0;
+}
+
+.container .forget{
+	margin-top: .4rem;
+	font-size: .4rem;
+	height: .4rem;
+}
+
+.container .forget .remember{
+	color:rgb(153,153,153);
+	vertical-align: middle;
+}
+
+.container .forget input[type=checkbox]{
+	width:.5rem;
+	height: .5rem;
+	margin-right: 10px;
+	vertical-align: middle;
+}
+
+.container .forget .forgetpwd{
+	color: rgb(30,127,245);
+}
+
+.container .btn {
+	margin-top: 1.2rem;
+	background-color: rgb(30,127,245);
+	border-color: rgb(30,127,245);
+	font-size: .45rem;
+	height: 1.17rem;
+	padding: 0;
+}
+
+.inut-text .error{
+	border-bottom-color: #fd5f39;
+    color: #fd5f39;
+}
+
+.input-label {
+	position: relative;
+	margin-top: .13rem;
+	display: none;
+}
+
+.container .vcode {
+	padding-right:2.13rem;
+}
+
+.container .vcode-btn{
+	position: absolute;
+    right: 0;
+    width: initial;
+    top: 0;
+    background: 0 0;
+    height: 1.2rem;
+    font-size: .37rem;
+    border: 0;
+}
+
+#mobile{
+	display: none;
+}
+
+.container .reg-xieyi{
+	font-size: .37rem;
+	margin-top: .53rem;
+	display: none;
+}
+
+.container .reg-xieyi span{
+	color:rgb(153,153,153);
+}
+
+.container .reg-xieyi a{
+
+}
+
+.mobile-login, .password-login{
+	position: fixed;
+	bottom: .83rem;
+	font-size: .4rem;
+	color: rgb(30,127,245);
+	margin-left: .83rem;
+	/*margin-top: 5%;*/
+}
+
+.flag-hide{
+	display: none;
+}
+
+.password-login{
+	display: none;
+}
+
+.xieyi{
+	position: fixed;
+	height: 500px;
+	width: 90%;
+	top: 50%;
+	left: 50%;
+	z-index: 999;
+	background: #fff;
+	transform: translate(-50%,-50%);
+	display: none;
+}
+
+.xieyi .xieyi-title {
+	height: 50px;
+	background-color: rgb(30,127,245);
+	color: #fff;
+	text-align: center;
+	line-height: 50px;
+	font-size: 18px;
+}
+
+.xieyi .xieyi-body {
+	padding: .5rem .4rem;
+	overflow: scroll;
+	overflow-x: hidden;
+	height: 450px;
+	font-size: .4rem;
+}
+
+.xieyi .xieyi-close{
+	color: #fff;
+	position: absolute;
+	font-size: 30px;
+	top: 0;
+	right: .4rem;
+	line-height: 50px;
+}
+
+.xieyi .xieyi-body p{
+	margin-bottom: 0;
+}
+
+
+
+

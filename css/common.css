@@ -1,0 +1,286 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+	-webkit-tap-highlight-color: transparent;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body{
+	margin: 0;
+}
+
+body, input {
+    font-size: 14px;
+    font-family: PingFangSC-Regular,sans-serif,"Hiragino Sans GB","Microsoft Yahei",Arial,"Helvetica Neue",Helvetica;
+}
+
+input {
+    outline: 0;
+    border-radius: 0;
+}
+
+input,textarea{
+    -webkit-appearance: none;
+}
+
+.common-alert{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    padding: .32rem .4rem;
+    z-index: 999;
+    white-space: nowrap;
+    color: #fff;
+    font-size: .35rem;
+    background: rgba(0,0,0,.87);
+    border-radius: .27rem;
+    transform: translate(-50%,50%);
+}
+
+.zhezhao{
+    background-color: #000;
+    z-index: 998;
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    opacity: 0.5;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    -moz-opacity: 0.5;
+}
+
+.dialog-entrance{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 8rem;
+    height: 8rem;
+    background-color: #fff;
+    z-index: 999;
+    transform: translate(-50%, -50%);
+    padding: 0 .8rem;
+    border-radius: 5px;
+}
+
+.dialog-close{
+    font-size: .7rem;
+    font-weight: 700;
+    color: #8d8787;
+    position: absolute;
+    right: .2rem;
+}
+
+.dialog-entrance .dialog-entrance-title{
+    font-size: .51rem;
+    font-weight: 400;
+    color: #333;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.dialog-entrance .weixin-entrance, .mobile-entrance{
+    background-color: rgb(30,127,245);
+    font-size: .51rem;
+    height: 1.2rem;
+    line-height: 1.2rem;
+    border-radius: 2px;
+    color: #fff;
+    font-weight: 400;
+    margin-top: .7rem;
+    text-align: center;
+}
+
+.dialog-entrance .mobile-entrance{
+    margin-top: .3rem;
+    background-color: rgb(242,242,242);
+    color: #000;
+}
+
+.dialog-entrance .weixin-entrance img{
+    height: .6rem;
+    vertical-align: text-bottom;
+}
+
+.dialog-entrance .mobile-entrance img{
+    height: .6rem;
+    vertical-align: text-bottom;
+}
+
+.dialog-entrance .entrance-xieyi{
+    font-size: .3rem;
+    text-align: center;
+    margin-top: .7rem;
+    color: rgb(102,102,102);
+}
+
+.no-data{
+    font-size: .4rem;
+    color: rgb(102,102,102);
+    text-align: center;
+    height: 1.2rem;
+    line-height: 1.2rem;
+}
+
+.datepick{
+    position: fixed;
+    height: 8rem;
+    width: 100%;
+    background-color: #fff;
+    bottom: 0;
+    z-index: 999;
+    padding: .4rem;
+}
+
+.datepick .datepick-cancel{
+    float: left;
+    font-size: .45rem;
+}
+
+.datepick .datepick-sure{
+    float: right;
+    font-size: .45rem;
+    color: rgb(30,127,245);
+}
+
+.datepick .datepick-select{
+    width: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+    font-size: .5rem;
+    -webkit-mask: -webkit-linear-gradient(bottom, #debb47 50%, rgba(36, 142, 36, 0));
+}
+
+.datepick .datepick-select .datepick-roll {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    height: 6rem;
+    -webkit-mask: -webkit-linear-gradient(top, #debb47 50%, rgba(36, 142, 36, 0));
+}
+
+.datepick .datepick-select .selector{
+    margin-top: 1.4rem;
+}
+
+.datepick .datepick-select-left{
+    width: 50%;
+    float: left;
+    position: absolute;
+}
+
+.datepick .datepick-select-right{
+    width: 50%;
+    float: right;
+    position: absolute;
+    right: 0;
+}
+
+.datepick .first {
+    height: 1.2rem;
+    line-height: 1.2rem;
+}
+
+
+.datepick .guding-left{
+    height: 1.2rem;
+    margin-top: 2.6rem;
+    width: 50%;
+    float: left;
+    margin-left: -1px;
+    border-bottom: 2px solid rgb(30,127,245);
+    border-top: 2px solid rgb(30,127,245);
+}
+
+.datepick .guding-right{
+    height: 1.2rem;
+    float: right;
+    margin-right: -1px;
+    margin-top: 2.6rem;
+    width: 50%;
+    border-bottom: 2px solid rgb(30,127,245);
+    border-top: 2px solid rgb(30,127,245);
+}
+
+.btn:focus,button:focus,primary:focus{
+  box-shadow: none;
+}
+
+.form-control:focus{
+    box-shadow: none;
+}
+
+/*  修改日历控件类型 */
+::-webkit-datetime-edit {padding: 1px;}  /*控制编辑区域的*/
+::-webkit-datetime-edit-fields-wrapper { background-color: #fff; }    /*控制年月日这个区域的*/
+::-webkit-datetime-edit-text { padding: 10px;}  /*这是控制年月日之间的斜线或短横线的*/
+::-webkit-datetime-edit-year-field { color: #333; }    /*控制年文字, 如2013四个字母占据的那片地方*/   
+::-webkit-datetime-edit-month-field { color: #333; }    /*控制月份*/
+::-webkit-datetime-edit-day-field { color: #333; }    /*控制具体日子*/
+::-webkit-inner-spin-button { visibility: hidden; display: none;width: 0px;}    /*这是控制上下小箭头的*/
+::-webkit-calendar-picker-indicator {      /*这是控制下拉小箭头的*/
+    visibility: hidden;
+    display: none;
+    width: 0px;
+}
+::-webkit-clear-button {    /*控制清除按钮*/
+    visibility: hidden;
+    display: none;
+    width: 0px;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 1.5rem;
+    background-color: #fff;
+    z-index: 999;
+    padding: .1rem 0;
+    box-shadow: 0px -1px 5px #ede9e9;
+}
+
+footer ul {
+    margin-bottom: 0px;
+}
+
+footer ul li {
+    float: left;
+    width: 25%;
+    list-style: none;
+    text-align: center;
+    font-size: .35rem;
+    color: rgb(51,51,51);
+    cursor:pointer;
+}
+
+footer ul li .text{
+    font-size: .35rem;
+    color: rgb(153,153,153);
+    margin-top: .05rem;
+}
+
+footer ul li .active{
+    color: rgb(78,158,255);
+}
+
+footer ul li img{
+    height: .8rem;
+}
+
+
+
+
+/*======================公共样式=======================*/
